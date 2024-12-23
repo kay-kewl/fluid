@@ -371,7 +371,7 @@ PType FluidSimulator<PType, VType, VFType, N, K>::move_prob(int x, int y) {
 
     PType sum = PType(0);
     for (const auto& [dx, dy] : deltas) {
-        int nx = x + dx, ny = x + dy;
+        int nx = x + dx, ny = y + dy;
         if (field_data[nx][ny] == '#' || last_use[nx][ny] == UT) {
             continue;
         }
