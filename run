@@ -1,0 +1,1 @@
+./FluidSimulatorExecutable --p-type="FIXED(32,16)" --v-type="FIXED(32,16)" --vf-type="FIXED(32,16)" --steps=100 --checkpoint=10
